@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% block content %}
+<header>
+  <div class="container">
+    <h1>
+      {% block title %}Welcome to Spicy Flask{% endblock %}
+    </h1>
+    <p>
+      Spicy Flask is a community resource to learn web development with Flask.
+      It contains tutorials, video lessos, and more to help achieve your success
+      as a Flask developer.
+    </p>
+  </div>
+</header>
+<section class="overlap" id="features">
+  <div class="features-grid">
+    <div class="card bg-red">
+      <h2>Tutorials, videos and code snippets about Flask weekly on your inbox.</h2>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email"
+        required
+      />
+      <button
+        class="btn-green"
+        type="submit"
+      />
+      Become a member
+      </button>
+    </div>
+    <div class="card">
+      <h3>A vibrant community</h3>
+      <p>
+        Spicy Flask is a community resource to learn web development with Flask.
+        It contains tutorials, video lessos, and more to help achieve your
+        success as a Flask developer.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Tips</h3>
+      <p>
+        Spicy Flask is a community resource to learn web development with Flask.
+        It contains tutorials, video lessos, and more to help achieve your
+        success as a Flask developer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div>
+    <br />
+    <h2>Articles</h2>
+    <hr />
+    <div class="card">
+      <h3>Tutorials</h3>
+      <p>
+        Spicy Flask is a community resource to learn web development with Flask.
+        It contains tutorials, video lessos, and more to help achieve your
+        success as a Flask developer.
+      </p>
+    </div>
+    <div class="card">
+      <h3>A vibrant community</h3>
+      <p>
+        Spicy Flask is a community resource to learn web development with Flask.
+        It contains tutorials, video lessos, and more to help achieve your
+        success as a Flask developer.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Tips</h3>
+      <p>
+        Spicy Flask is a community resource to learn web development with Flask.
+        It contains tutorials, video lessos, and more to help achieve your
+        success as a Flask developer.
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
