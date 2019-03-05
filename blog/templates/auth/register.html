@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% block content %}
+<header>
+  <div class="container">
+    <h1>
+      {% block title %}Sign up for Flask Blog{% endblock %}
+    </h1>
+  </div>
+</header>
+<section id="register">
+  <div class="card">
+    <form method="post">
+      <label for="username">Username</label>
+      <input
+        name="username"
+        id="username"
+        placeholder="Choose a a username"
+        required
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="A strong password"
+        required
+      />
+      <input type="submit" value="Register" />
+      <hr />
+      <p>Already a member? <a href="{{ url_for('auth.login') }}">Sign in</a></p>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

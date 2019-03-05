@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+<header>
+  <div class="container">
+    <h1>
+      {% block title %}Sign in, it's free{% endblock %}
+    </h1>
+  </div>
+</header>
+<section id="login">
+  <div class="card">
+    <form method="post">
+      <label for="username">Username</label>
+      <input
+        name="username"
+        id="username"
+        placeholder="Your username"
+        required
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Your username"
+        required
+      />
+      <input type="submit" value="Log In" />
+      <hr />
+      <p>Not a member? <a href="{{ url_for('auth.register') }}">Sign Up</a></p>
+    </form>
+  </div>
+</section>
+{% endblock %}
